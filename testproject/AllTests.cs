@@ -86,13 +86,12 @@ namespace SeleniumTests
         public void ContactsTest()
         {
 
-            // Click on the careers link from the Landing page 
+            // Click on the contacts link from the Landing page 
             Testhomepage.Contact.Click();
             
-            //Console.WriteLine(TestContactPage.noofoffices());
-          //Trace.WriteLine("No of offices are "+TestContactPage.noofoffices());
-            //TestContext.WriteLine("No of offices are " + TestContactPage.noofoffices());
-            Assert.AreEqual(TestContactPage.noofoffices(), 10);
+           Trace.WriteLine("No of offices are "+TestContactPage.noofoffices());
+           
+            Assert.AreEqual(TestContactPage.noofoffices(), 29);
         }
 
         private bool IsElementPresent(By by)
